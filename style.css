@@ -1,0 +1,114 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    background-color: rgb(93, 54, 98);
+}
+
+.bounce {
+    letter-spacing: 5px;
+    font-family: sans-serif;
+}
+
+span {
+    display: inline-block;
+    animation: bounce 0.4s ease infinite alternate;
+    color: linen;
+    text-shadow: -10px 8px 20px rgb(0, 0, 0);
+    font-weight: 900;
+    font-size: 4em;
+}
+
+@keyframes bounce {
+    0% {
+        transform: translateY(0);
+    }
+
+    100% {
+        transform: translateY(50px);
+    }
+}
+
+span:nth-child(1) {
+    animation-delay: 0s;
+}
+
+span:nth-child(2) {
+    animation-delay: 0.1s;
+}
+
+span:nth-child(3) {
+    animation-delay: 0.2s;
+}
+
+span:nth-child(4) {
+    animation-delay: 0.3s;
+}
+
+span:nth-child(5) {
+    animation-delay: 0.4s;
+}
+
+span:nth-child(6) {
+    animation-delay: 0.5s;
+}
+
+@media screen and (max-width:500px) {
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 87vh;
+        background: repeating-radial-gradient(circle, rgb(240, 198, 205) , rgb(158, 156, 156) 50%, skyblue 100%);
+        background-size: cover;
+        background-position: center;
+    }
+
+    .bounce {
+        letter-spacing: 5px;
+    }
+
+    span {
+        display: inline-block;
+        animation: bounce 0.4s ease infinite alternate;
+        color: linen;
+        text-shadow: -10px 8px 20px rgb(0, 0, 0,100%);
+        font-weight: 900;
+        font-size: 2.6em;
+    }
+
+    @keyframes bounce {
+        0% {
+            transform: translateY(0);
+        }
+
+        100% {
+            transform: translateY(50px);
+        }
+    }
+
+    span:nth-child(1) {
+        animation-delay: 0s;
+    }
+
+    span:nth-child(2) {
+        animation-delay: 0.1s;
+    }
+
+    span:nth-child(3) {
+        animation-delay: 0.2s;
+    }
+
+    span:nth-child(4) {
+        animation-delay: 0.3s;
+    }
+
+    span:nth-child(5) {
+        animation-delay: 0.4s;
+    }
+
+    span:nth-child(6) {
+        animation-delay: 0.5s;
+    }
+}
